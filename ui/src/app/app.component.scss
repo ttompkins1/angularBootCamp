@@ -1,0 +1,15 @@
+mat-toolbar.mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    max-width: 64rem;
+}
+
+.home-button {
+    font-size: 1.25rem;
+}

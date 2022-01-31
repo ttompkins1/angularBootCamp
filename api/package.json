@@ -1,0 +1,31 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "exports": "./dist/index.js",
+    "scripts": {
+        "start": "node --experimental-specifier-resolution=node --loader ts-node/esm index.ts",
+        "watch": "nodemon --watch './**/*.ts' --exec \"node --experimental-specifier-resolution=node --loader ts-node/esm\" index.ts",
+        "dev": "tsc-watch --onSuccess \"npm run watch\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@ngneat/falso": "^2.19.0",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/node": "^17.0.12",
+        "cors": "^2.8.5",
+        "date-fns": "^2.28.0",
+        "express": "^4.17.2",
+        "lowdb": "^3.0.0",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.5.1",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.5",
+        "tsc-watch": "^4.6.0"
+    },
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+}
